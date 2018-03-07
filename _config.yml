@@ -1,0 +1,31 @@
+url: "https://www.didiksetiawan.com"
+title: Didik Setiawan | Blog
+about: cat ~/.life_history | grep fun
+description: Didik Setiawan's Blog
+author: Didik Setiawan
+logo: /static/img/avatar.png
+category_dir: category
+permalink: /blog/:year/:month/:day/:title/
+highlighter: pygments
+
+baseurl: ""
+
+allowsearch: true
+
+disqus_shortname: didiksetiawan
+google_analytics: UA-78151571-1
+
+share:
+  twitter_username: didik_swn
+  fb_appid: 000000000000
+
+#enableTags: true
+#tagarray: []
+
+paginate: 5
+per_page: 5
+paginate_path: "/page:num/"
+markdown: kramdown
+plugins:
+  - jekyll-paginate
+  - jekyll-category-pages
