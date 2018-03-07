@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="shortcut icon" href="/static/img/favicon.ico" />
+        <title>My Vim Configuration - Didik Setiawan | Blog</title>
+        <meta name="author" content="Didik Setiawan" />
+        <meta name="description" content="My Vim Configuration" />
+        <meta name="keywords" content="My Vim Configuration, Didik Setiawan | Blog, text_editor, vim" />
+
+        <meta content="0" property="fb:app_id">
+        <meta content="Didik Setiawan | Blog" property="og:site_name">
+        
+          <meta content="My Vim Configuration" property="og:title">
+        
+        
+          <meta content="article" property="og:type">
+        
+        
+          <meta content="Didik Setiawan's Blog" property="og:description">
+        
+        
+          <meta content="http://localhost:4000/blog/2016/06/03/my-vim-configuration/" property="og:url">
+        
+        
+          <meta content="2016-06-03T15:08:57+07:00" property="article:published_time">
+          <meta content="http://localhost:4000/about/" property="article:author">
+        
+        
+          <meta content="http://localhost:4000/static/img/logo-high-resolution.png" property="og:image">
+        
+        
+          
+          <meta content="text_editor" property="article:section">
+          
+        
+        
+          
+        
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@didik_swn">
+        <meta name="twitter:creator" content="@didik_swn">
+        
+          <meta name="twitter:title" content="My Vim Configuration">
+        
+        
+          <meta name="twitter:url" content="http://localhost:4000/blog/2016/06/03/my-vim-configuration/">
+        
+        
+          <meta name="twitter:description" content="Didik Setiawan's Blog">
+        
+        
+
+      <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+      <script type="text/javascript">window.baseurl = 'http://localhost:4000';</script>
+      
+        <!-- Custom Fonts -->
+        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+
+        <!-- FontAwesome icons -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/74dfc6cf47.css">
+
+        <!-- Core BootStrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <!-- Material Design CSS -->
+        <link rel="stylesheet" href="/static/css/bootstrap-material-design.min.css">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/static/css/syntax.css">
+
+        <!-- Custom CSS -->        
+        <link rel="stylesheet" href="/static/css/thickbox.css">
+        <link rel="stylesheet" href="/static/css/main.css">
+        <link rel="stylesheet" href="/static/css/projects.css">
+
+        <script type="text/javascript">
+          //loadingImage is relative to project dir
+          var tb_pathToImage = "/static/img/loadingAnimation.gif";
+        </script>
+
+  </head>
+
+  <body class="home overflow-hidden">
+    <div class="header-panel shadow-z-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-4 col-xs-12">
+            <div class="row-picture">
+              <img id="about" class="logo-img" src="/static/img/avatar.png" height="75px" width="75px">
+            </div>
+            <div class="row-details">
+              <h4 class="list-group-item-heading">Didik Setiawan</h4>
+              <p class="list-group-item-text">cat ~/.life_history | grep fun</p>
+              <div class="social-icons">
+	
+        <a class="icon" target="_blank" href="https://www.twitter.com/didik_swn"><i class="fa fa-twitter"></i></a>
+    
+        <a class="icon" target="_blank" href="https://www.github.com/dstw"><i class="fa fa-github"></i></a>
+    
+        <a class="icon" target="_blank" href="https://www.gitlab.com/dstw"><i class="fa fa-gitlab"></i></a>
+    
+        <a class="icon" target="_blank" href="https://www.linkedin.com/in/didiksetiawan"><i class="fa fa-linkedin"></i></a>
+    
+</div>
+
+            </div>
+            <div class="navbar-header pull-right">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <i class="fa fa-2x fa-bars"></i>
+              </button>
+            </div>
+          </div>
+          <div class="col-md-9 col-sm-8 col-xs-12">
+          <div class="row">
+            <h2 class="blog-title-pro col-md-6 col-sm-12 col-xs-12 ">My Vim Configuration</h2>
+            
+            <div class="col-md-6 col-sm-12 col-xs-12 searchcontrol" id="js-search">
+              <input class="form-control" type="text" id="js-search__input" placeholder="Search">
+              <ul class="search__results" id="js-search__results"></ul>
+            </div>
+            
+            </div>
+            <p class="info">
+              
+                <span class="time">03 Jun 2016</span>
+              
+              
+                <span class="categories">
+                  &raquo; 
+                  
+                    <a href="/category/text_editor">text_editor</a>
+                    , 
+                  
+                    <a href="/category/vim">vim</a>
+                    
+                  
+                </span>
+              
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container main outer">
+      <div class="row">
+        <div class="col-md-3 col-xs-12">
+              <nav class="menu">
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="list-separator nav navbar-nav well well-primary post">
+
+	
+	
+	
+	
+	
+	
+    
+	
+	<li class="col-lg-12 col-md-12 col-sm-4 col-xs-12 current-menu-item my-vim-configuration"><a href="/" target="_self"><i class="fa fa-home"></i> Home</a></li>
+
+	
+	
+	
+	
+	
+	
+    
+	
+	<li class="col-lg-12 col-md-12 col-sm-4 col-xs-12  my-vim-configuration"><a href="/about/" target="_self"><i class="fa fa-comments"></i> About</a></li>
+
+	
+	
+	
+	
+	
+	
+    
+	
+	<li class="col-lg-12 col-md-12 col-sm-4 col-xs-12  my-vim-configuration"><a href="mailto:ds@didiksetiawan.com" target="_self"><i class="fa fa-envelope"></i> Email</a></li>
+
+</ul>
+
+    </div>
+    </nav>
+
+        </div>
+        <div class="col-md-9 col-xs-12 full">
+          <div class="post-content well">
+<article class="content">
+    <div class="post"><p>This is my Vim configuration a.k.a .vimrc. You can download the file from
+<a href="https://github.com/dstw/dotfiles/raw/master/.vimrc">here</a>.
+Feel free to use and customize.</p>
+
+<p>Below are some description of its contents:</p>
+
+<p><em>Use vim settings instead of vi</em></p>
+
+<figure class="highlight"><pre><code class="language-vim" data-lang="vim"><span></span><span class="k">set</span> <span class="nb">nocompatible</span> </code></pre></figure>
+
+<p><em>No backup or swap</em></p>
+
+<figure class="highlight"><pre><code class="language-vim" data-lang="vim"><span></span><span class="k">set</span> <span class="nb">nobackup</span> <span class="nb">nowritebackup</span> <span class="nb">noswapfile</span> <span class="nb">autoread</span>          </code></pre></figure>
+
+<p><em>Enable per-directory .vimrc files</em></p>
+
+<figure class="highlight"><pre><code class="language-vim" data-lang="vim"><span></span><span class="k">set</span> <span class="nb">exrc</span>                                                </code></pre></figure>
+
+<p><em>Don’t unload buffer when switching away</em></p>
+
+<figure class="highlight"><pre><code class="language-vim" data-lang="vim"><span></span><span class="k">set</span> <span class="nb">hidden</span>                                              </code></pre></figure>
+
+<p><em>Allow per-file settings via modeline</em></p>
+
+<figure class="highlight"><pre><code class="language-vim" data-lang="vim"><span></span><span class="k">set</span> <span class="nb">modeline</span>                                            </code></pre></figure>
+
+<p><em>Disable unsafe commands in local .vimrc files</em></p>
+
+<figure class="highlight"><pre><code class="language-vim" data-lang="vim"><span></span><span class="k">set</span> <span class="nb">secure</span>                                              </code></pre></figure>
+
+<p><em>Saving and encoding</em></p>
+
+<figure class="highlight"><pre><code class="language-vim" data-lang="vim"><span></span><span class="k">set</span> <span class="nb">encoding</span><span class="p">=</span>utf<span class="m">-8</span> <span class="nb">fileencoding</span><span class="p">=</span>utf<span class="m">-8</span> <span class="nb">termencoding</span><span class="p">=</span>utf<span class="m">-8</span></code></pre></figure>
+
+<p><em>Command completion</em></p>
+
+<figure class="highlight"><pre><code class="language-vim" data-lang="vim"><span></span><span class="k">set</span> <span class="nb">wildmenu</span>                                            </code></pre></figure>
+
+<p><em>Allow backspacing over everything in insert mode</em></p>
+
+<figure class="highlight"><pre><code class="language-vim" data-lang="vim"><span></span><span class="k">set</span> <span class="nb">backspace</span><span class="p">=</span>indent<span class="p">,</span><span class="nb">eol</span><span class="p">,</span><span class="k">start</span>                          </code></pre></figure>
+
+<p><em>Display status line which contains current mode, file name, file status,
+ruler, etc.</em></p>
+
+<figure class="highlight"><pre><code class="language-vim" data-lang="vim"><span></span><span class="k">set</span> <span class="nb">laststatus</span><span class="p">=</span><span class="m">2</span>                                        </code></pre></figure>
+
+<p><em>Always set autoindenting on</em></p>
+
+<figure class="highlight"><pre><code class="language-vim" data-lang="vim"><span></span><span class="k">set</span> <span class="nb">autoindent</span>                                          </code></pre></figure>
+
+<p><em>Display incomplete commands</em></p>
+
+<figure class="highlight"><pre><code class="language-vim" data-lang="vim"><span></span><span class="k">set</span> <span class="nb">showcmd</span>                                             </code></pre></figure>
+
+<p><em>Keep upto 50 lines of command line history</em></p>
+
+<figure class="highlight"><pre><code class="language-vim" data-lang="vim"><span></span><span class="k">set</span> <span class="k">history</span><span class="p">=</span><span class="m">50</span>                                          </code></pre></figure>
+
+<p><em>Show a vertical line at the 79th character</em></p>
+
+<figure class="highlight"><pre><code class="language-vim" data-lang="vim"><span></span><span class="k">set</span> <span class="nb">textwidth</span><span class="p">=</span><span class="m">80</span>                                        </code></pre></figure>
+
+<p><em>Highlight column after ‘textwidth’</em></p>
+
+<figure class="highlight"><pre><code class="language-vim" data-lang="vim"><span></span><span class="k">set</span> <span class="nb">colorcolumn</span><span class="p">=+</span><span class="m">1</span>                                      </code></pre></figure>
+
+<p><em>Switch syntax highlighting on</em></p>
+
+<figure class="highlight"><pre><code class="language-vim" data-lang="vim"><span></span><span class="nb">syntax</span> <span class="k">on</span>                                               </code></pre></figure>
+
+<p><em>Switch highlighting on the last used search pattern</em></p>
+
+<figure class="highlight"><pre><code class="language-vim" data-lang="vim"><span></span><span class="k">set</span> <span class="nb">hlsearch</span> <span class="nb">incsearch</span> <span class="nb">ignorecase</span> <span class="nb">smartcase</span>             </code></pre></figure>
+
+<p><em>Don’t hide the mouse cursor while typing</em></p>
+
+<figure class="highlight"><pre><code class="language-vim" data-lang="vim"><span></span><span class="k">set</span> <span class="nb">nomousehide</span>                                         </code></pre></figure>
+
+<p><em>Right-click pops up contect menu</em></p>
+
+<figure class="highlight"><pre><code class="language-vim" data-lang="vim"><span></span><span class="k">set</span> <span class="nb">mousemodel</span><span class="p">=</span><span class="k">popup</span>                                    </code></pre></figure>
+
+<p><em>Show cursor position in status bar</em></p>
+
+<figure class="highlight"><pre><code class="language-vim" data-lang="vim"><span></span><span class="k">set</span> <span class="nb">ruler</span>                                               </code></pre></figure>
+
+<p><em>Show line numbers on left</em></p>
+
+<figure class="highlight"><pre><code class="language-vim" data-lang="vim"><span></span><span class="k">set</span> <span class="k">number</span>                                              </code></pre></figure>
+
+<p><em>Disable code folding</em></p>
+
+<figure class="highlight"><pre><code class="language-vim" data-lang="vim"><span></span><span class="k">set</span> <span class="nb">nofoldenable</span>                                        </code></pre></figure>
+
+<p><em>Scroll the window so we can always see 10 lines around the cursor</em></p>
+
+<figure class="highlight"><pre><code class="language-vim" data-lang="vim"><span></span><span class="k">set</span> <span class="nb">scrolloff</span><span class="p">=</span><span class="m">10</span>                                        </code></pre></figure>
+
+<p><em>Kernel coding style</em></p>
+
+<figure class="highlight"><pre><code class="language-vim" data-lang="vim"><span></span><span class="k">set</span> <span class="nb">tabstop</span><span class="p">=</span><span class="m">8</span>                                           
+<span class="k">set</span> <span class="nb">softtabstop</span><span class="p">=</span><span class="m">8</span>                                       
+<span class="k">set</span> <span class="nb">shiftwidth</span><span class="p">=</span><span class="m">8</span>                                        
+<span class="k">set</span> <span class="nb">noexpandtab</span>                                         </code></pre></figure>
+
+<p><em>Enable file type detection</em></p>
+
+<figure class="highlight"><pre><code class="language-vim" data-lang="vim"><span></span><span class="k">filetype</span> plugin indent <span class="k">on</span>                               </code></pre></figure>
+
+<p><em>Shortcut to search visually selected text</em></p>
+
+<figure class="highlight"><pre><code class="language-vim" data-lang="vim"><span></span><span class="nb">vnoremap</span> <span class="sr">//</span> <span class="k">y</span>/<span class="p">&lt;</span>C<span class="p">-</span>R<span class="p">&gt;</span>&quot;<span class="p">&lt;</span>CR<span class="p">&gt;</span></code></pre></figure>
+
+<p><em>Check if running on gvim</em></p>
+
+<figure class="highlight"><pre><code class="language-vim" data-lang="vim"><span></span><span class="k">if</span> has<span class="p">(</span><span class="s2">&quot;gui_running&quot;</span><span class="p">)</span>                                   </code></pre></figure>
+
+<p><em>Set terminal color to 256</em></p>
+
+<figure class="highlight"><pre><code class="language-vim" data-lang="vim"><span></span><span class="k">set</span> <span class="nb">t_Co</span><span class="p">=</span><span class="m">256</span>                                          </code></pre></figure>
+
+<p><em>Check if using Windows</em></p>
+
+<figure class="highlight"><pre><code class="language-vim" data-lang="vim"><span></span><span class="k">if</span> has<span class="p">(</span><span class="s2">&quot;win32&quot;</span><span class="p">)</span> <span class="p">||</span> has<span class="p">(</span><span class="s2">&quot;win16&quot;</span><span class="p">)</span>                       </code></pre></figure>
+
+<p><em>Set Ubuntu Mono font with size 11</em></p>
+
+<figure class="highlight"><pre><code class="language-vim" data-lang="vim"><span></span><span class="k">set</span> <span class="nb">guifont</span><span class="p">=</span>Ubuntu\ Mono:h11                        </code></pre></figure>
+
+<p><em>Use solarized colorscheme</em></p>
+
+<figure class="highlight"><pre><code class="language-vim" data-lang="vim"><span></span><span class="k">colorscheme</span> solarized                                 </code></pre></figure>
+
+<p><em>Set the background to dark color</em></p>
+
+<figure class="highlight"><pre><code class="language-vim" data-lang="vim"><span></span><span class="k">set</span> <span class="nb">background</span><span class="p">=</span><span class="nb">dark</span>                                   </code></pre></figure>
+
+<p><em>Highlight the current line</em></p>
+
+<figure class="highlight"><pre><code class="language-vim" data-lang="vim"><span></span><span class="k">set</span> <span class="nb">cursorline</span>                                        </code></pre></figure>
+
+<p><em>Use letter as the print output format</em></p>
+
+<figure class="highlight"><pre><code class="language-vim" data-lang="vim"><span></span><span class="k">set</span> <span class="nb">printoptions</span><span class="p">=</span>paper:letter                         </code></pre></figure>
+
+<p>I use Ubuntu font which can be download from
+<a href="http://font.ubuntu.com/">font.ubuntu.com</a>.
+To enable solarized colorscheme, download file solarized.vim from
+https://github.com/altercation/vim-colors-solarized/.
+If you want to look my personal vim configuration, you can find it
+<a href="https://github.com/dstw/dotfiles">here</a>.</p>
+
+<p>I use this configuration in my Linux workstation and server.
+I use exclusively for editing
+linux kernel and other open source projects. For daily programming use, you can
+change the value of tabstop, softtabstop and shiftwidth.<br />
+Happy Vimming!</p>
+</div>
+    <hr />
+    <div class="share-page">
+    Share this on &rarr;
+ <a href="https://twitter.com/share" class="twitter-share-button" data-via="didik_swn">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+<!-- Google + -->
+<div class="g-plus" data-action="share" data-annotation="bubble"></div>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+
+<!-- Facebook -->
+<div class="fb-share-button" data-href="http://localhost:4000/blog/2016/06/03/my-vim-configuration/" data-layout="button_count" style="position: relative; top: -8px; left: 3px;"></div>
+</div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+</article>
+<hr />
+
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <div class="panel-body">
+                <h4>Related Posts</h4>
+                <ul>
+                
+                <li class="relatedPost">
+                    <a href="http://localhost:4000/blog/2016/06/02/vim-quick-reference/">Vim Quick Reference</a>
+                    
+                        <small>(Categories: <a href="/category/text_editor">text_editor</a>, <a href="/category/vim">vim</a>)</small>
+                    
+                </li>
+                
+                
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+
+    </ul>
+    </div>
+
+
+<div class="PageNavigation">
+  
+    <a class="prev pull-left" href="http://localhost:4000/blog/2016/06/02/vim-quick-reference/">&laquo; Vim Quick Reference</a>
+  
+  
+    <a class="next pull-right" href="http://localhost:4000/blog/2016/09/02/convert-text-to-pdf-on-linux/">Convert Text to Pdf on Linux &raquo;</a>
+  
+</div>
+
+
+<div class="disqus-comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* <![CDATA[ */
+
+        var disqus_shortname = "didiksetiawan";
+        var disqus_identifier = "http://localhost:4000_My Vim Configuration";
+        var disqus_title = "My Vim Configuration";
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    /* ]]> */
+    </script>
+</div>
+</div>
+          <div class="row">
+            <div class="col-md-12 col-xs-12 footer">
+              <footer>
+	© 2009-2018 Didik Setiawan - Powered by Jekyll.
+</footer>
+
+            </div>
+          </div>
+        </div> <!-- end /.col-md-9 -->
+      </div> <!-- end /.row -->
+    </div>
+
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<script src="/static/js/super-search.js"></script>
+
+<script src="/static/js/thickbox-compressed.js"></script>
+<script src="/static/js/material.min.js"></script>
+<script src="/static/js/main.js"></script>
+<script src="/static/js/projects.js"></script>
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78151571-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </body>
+</html>
