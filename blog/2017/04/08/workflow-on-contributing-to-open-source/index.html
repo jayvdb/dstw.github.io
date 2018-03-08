@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="shortcut icon" href="/static/img/favicon.ico" />
+        <title>Workflow on Contributing to Open Source Project - Didik Setiawan | Blog</title>
+        <meta name="author" content="Didik Setiawan" />
+        <meta name="description" content="Workflow on Contributing to Open Source Project" />
+        <meta name="keywords" content="Workflow on Contributing to Open Source Project, Didik Setiawan | Blog, open_source, programming" />
+
+        <meta content="0" property="fb:app_id">
+        <meta content="Didik Setiawan | Blog" property="og:site_name">
+        
+          <meta content="Workflow on Contributing to Open Source Project" property="og:title">
+        
+        
+          <meta content="article" property="og:type">
+        
+        
+          <meta content="Didik Setiawan's Blog" property="og:description">
+        
+        
+          <meta content="https://www.didiksetiawan.com/blog/2017/04/08/workflow-on-contributing-to-open-source/" property="og:url">
+        
+        
+          <meta content="2017-04-08T06:43:38+00:00" property="article:published_time">
+          <meta content="https://www.didiksetiawan.com/about/" property="article:author">
+        
+        
+          <meta content="https://www.didiksetiawan.com/static/img/logo-high-resolution.png" property="og:image">
+        
+        
+          
+          <meta content="open_source" property="article:section">
+          
+        
+        
+          
+        
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@didik_swn">
+        <meta name="twitter:creator" content="@didik_swn">
+        
+          <meta name="twitter:title" content="Workflow on Contributing to Open Source Project">
+        
+        
+          <meta name="twitter:url" content="https://www.didiksetiawan.com/blog/2017/04/08/workflow-on-contributing-to-open-source/">
+        
+        
+          <meta name="twitter:description" content="Didik Setiawan's Blog">
+        
+        
+
+      <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+      <script type="text/javascript">window.baseurl = 'https://www.didiksetiawan.com';</script>
+      
+        <!-- Custom Fonts -->
+        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+
+        <!-- FontAwesome icons -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/74dfc6cf47.css">
+
+        <!-- Core BootStrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <!-- Material Design CSS -->
+        <link rel="stylesheet" href="/static/css/bootstrap-material-design.min.css">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/static/css/syntax.css">
+
+        <!-- Custom CSS -->        
+        <link rel="stylesheet" href="/static/css/thickbox.css">
+        <link rel="stylesheet" href="/static/css/main.css">
+        <link rel="stylesheet" href="/static/css/projects.css">
+
+        <script type="text/javascript">
+          //loadingImage is relative to project dir
+          var tb_pathToImage = "/static/img/loadingAnimation.gif";
+        </script>
+
+  </head>
+
+  <body class="home overflow-hidden">
+    <div class="header-panel shadow-z-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-4 col-xs-12">
+            <div class="row-picture">
+              <img id="about" class="logo-img" src="/static/img/avatar.png" height="75px" width="75px">
+            </div>
+            <div class="row-details">
+              <h4 class="list-group-item-heading">Didik Setiawan</h4>
+              <p class="list-group-item-text">cat ~/.life_history | grep fun</p>
+              <div class="social-icons">
+	
+        <a class="icon" target="_blank" href="https://www.twitter.com/didik_swn"><i class="fa fa-twitter"></i></a>
+    
+        <a class="icon" target="_blank" href="https://www.github.com/dstw"><i class="fa fa-github"></i></a>
+    
+        <a class="icon" target="_blank" href="https://www.gitlab.com/dstw"><i class="fa fa-gitlab"></i></a>
+    
+        <a class="icon" target="_blank" href="https://www.linkedin.com/in/didiksetiawan"><i class="fa fa-linkedin"></i></a>
+    
+</div>
+
+            </div>
+            <div class="navbar-header pull-right">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <i class="fa fa-2x fa-bars"></i>
+              </button>
+            </div>
+          </div>
+          <div class="col-md-9 col-sm-8 col-xs-12">
+          <div class="row">
+            <h2 class="blog-title-pro col-md-6 col-sm-12 col-xs-12 ">Workflow on Contributing to Open Source Project</h2>
+            
+            <div class="col-md-6 col-sm-12 col-xs-12 searchcontrol" id="js-search">
+              <input class="form-control" type="text" id="js-search__input" placeholder="Search">
+              <ul class="search__results" id="js-search__results"></ul>
+            </div>
+            
+            </div>
+            <p class="info">
+              
+                <span class="time">08 Apr 2017</span>
+              
+              
+                <span class="categories">
+                  &raquo; 
+                  
+                    <a href="/category/open_source">open_source</a>
+                    , 
+                  
+                    <a href="/category/programming">programming</a>
+                    
+                  
+                </span>
+              
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container main outer">
+      <div class="row">
+        <div class="col-md-3 col-xs-12">
+              <nav class="menu">
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="list-separator nav navbar-nav well well-primary post">
+
+	
+	
+	
+	
+	
+	
+    
+	
+	<li class="col-lg-12 col-md-12 col-sm-4 col-xs-12 current-menu-item workflow-on-contributing-to-open-source"><a href="/" target="_self"><i class="fa fa-home"></i> Home</a></li>
+
+	
+	
+	
+	
+	
+	
+    
+	
+	<li class="col-lg-12 col-md-12 col-sm-4 col-xs-12  workflow-on-contributing-to-open-source"><a href="/about/" target="_self"><i class="fa fa-comments"></i> About</a></li>
+
+	
+	
+	
+	
+	
+	
+    
+	
+	<li class="col-lg-12 col-md-12 col-sm-4 col-xs-12  workflow-on-contributing-to-open-source"><a href="mailto:ds@didiksetiawan.com" target="_self"><i class="fa fa-envelope"></i> Email</a></li>
+
+</ul>
+
+    </div>
+    </nav>
+
+        </div>
+        <div class="col-md-9 col-xs-12 full">
+          <div class="post-content well">
+<article class="content">
+    <div class="post"><p>In the open source world, different project comes with different workflow, using
+different medium. For instance, Linux Kernel development, use mailing list to
+gather patches for many developer around the world. The maintainer pick
+patches from developer with careful supervision. Then, they maintain release of
+the stable version, while Linus Torvalds himself maintain the mainline stream.<br />
+Other project, Git – a revision control system. It use same model as Linux
+Kernel, patches and conversations go to mailing list. With additional part, for
+the Continuous Integration system, it is recommended to use Github and Travis
+CI. Although they will reject all pull request from there.<br />
+Another example, Wget2 used Github mainly to perform collaboration (Because GNU
+not allowed their project to use Github, their move it to Gitlab [0]). Issues are
+discussed here. Pull request also getting merged here. Although, it also have
+mailing list to discuss issues and problems.<br />
+Here I share my experience how I contribute to open source, so my code could be
+merged in the project upstream. For an example, I will write several steps of
+my way doing Wget2 project for my GSoC 2017 application. Below are some points I
+follow:</p>
+
+<h3 id="obtain-source-code">Obtain Source Code</h3>
+
+<p>Startup procedures:</p>
+
+<p>Fork project so you can modify yourself via Gitlab interface.</p>
+
+<pre><code>git clone https://gitlab.com/dstw/wget2
+git remote add upstream https://dstw@gitlab.com/gnuwget/wget2.git
+</code></pre>
+
+<p>Create an own branch for each ‘task’ you are working on and make your commits
+within it. When done, sync with upstream, rebase/merge and create your patches
+via format-patch.</p>
+
+<p>Do not make changes to your branch ‘master’ - this should always reflect the
+original repo. This makes it easy for you to update your ‘master’ branch with
+changes from the ‘original/upstream’ master branch on Savannah.</p>
+
+<p>Sync your Gitlab repo with upstream:</p>
+
+<pre><code>git checkout master
+git fetch upstream
+git merge upstream/master
+</code></pre>
+
+<p>Sync your ‘new-feature’ branch before generating patches:</p>
+
+<pre><code>git checkout new-feature
+git rebase master
+git push -f  # pushing updated tree to your Gitlab new-feature branch)
+</code></pre>
+
+<p>Assume ‘new-feature’ is a private branch where you can do all the dirty things
+that you shouldn’t on public/shared branches. As soon as your patch has been
+accepted, remove the branch ‘new-feature’ locally and from Gitlab.</p>
+
+<h3 id="build-the-executables">Build the Executables</h3>
+
+<p>As prerequisite, install all mandatory software as listed in README.md.</p>
+
+<h3 id="find-the-problems">Find the Problems</h3>
+
+<p>I usually look at Wget2 Gitlab issues pages to find issues and problems which
+appropriate to newcomer like me.</p>
+
+<h3 id="make-changes-to-the-code">Make Changes to the Code</h3>
+
+<p>In this part, my knowledge in coding skill are truly challenged. Wget2 use C as
+its programming language. In my case, I just add some test based on requirements
+and of course with help from other contributors.</p>
+
+<h3 id="create-pullmerge-request">Create Pull/Merge Request</h3>
+
+<p>After I feel my code ready to merge, I push my commit to upstream and make a
+pull request from Gitlab interface.</p>
+
+<h3 id="wait-for-review">Wait for Review</h3>
+
+<p>After create a merge request, I wait for feedback, criticism, suggestions, etc.
+from other developer.<br />
+Respond to it! and follow up with improved versions of your change. Even for a
+trivial patch you shouldn’t be surprised if it takes two or more iterations
+before your patch is accepted. This is the best part of participating in the Git
+community; it is your chance to get personalized instruction from very
+experienced peers!</p>
+
+<h3 id="propose-new-change">Propose New Change</h3>
+
+<p>After getting a review, do some improvement. After all, make a new commit. Here,
+there is option to overwrite my existing commits or create new merge commits to
+keep history.</p>
+
+<pre><code>git push origin new-feature
+</code></pre>
+
+<p>If there is a conflict, Git will ask me to resolve the problem this. Then, try
+to push and merge commits. This won’t remove any existing commits. And if I
+don’t want to keep any commits history, I usually force to push:</p>
+
+<pre><code>git push -f origin new-feature
+</code></pre>
+
+<p><del>This is considered a little bit harmful. Before I do this, I will make sure
+that I know what I do. Also, forcing commits is should only do if it believed to
+final commits or at least near final, I should not do any more change to it.</del> 
+Just make sure that I don’t force push to the <strong>master</strong> branch of the project,
+otherwise, is safe.</p>
+
+<p>Finally, after some iteration, if project maintainer agree with my changes, then
+they will merge it into their repository. If not, I should be take a look on my
+proposed changes more carefully, what could be wrong and what should be fixed.
+And the best of it all, I could learn a lot from the process.</p>
+
+<p>References:<br />
+[0] (http://lists.gnu.org/archive/html/bug-wget/2017-04/msg00052.html)</p>
+</div>
+    <hr />
+    <div class="share-page">
+    Share this on &rarr;
+ <a href="https://twitter.com/share" class="twitter-share-button" data-via="didik_swn">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+<!-- Google + -->
+<div class="g-plus" data-action="share" data-annotation="bubble"></div>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+
+<!-- Facebook -->
+<div class="fb-share-button" data-href="https://www.didiksetiawan.com/blog/2017/04/08/workflow-on-contributing-to-open-source/" data-layout="button_count" style="position: relative; top: -8px; left: 3px;"></div>
+</div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+</article>
+<hr />
+
+
+    
+    
+        
+            
+                
+                <div class="panel-body">
+                <h4>Related Posts</h4>
+                <ul>
+                
+                <li class="relatedPost">
+                    <a href="https://www.didiksetiawan.com/blog/2018/03/06/gsoc-with-gnu-wget2-part-i/">GSoC with GNU Wget2 - Part I</a>
+                    
+                        <small>(Categories: <a href="/category/open_source">open_source</a>, <a href="/category/programming">programming</a>, <a href="/category/collaboration">collaboration</a>, <a href="/category/gsoc">gsoc</a>)</small>
+                    
+                </li>
+                
+                
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <li class="relatedPost">
+                    <a href="https://www.didiksetiawan.com/blog/2017/04/05/google-summer-of-code-preparation/">Google Summer of Code Preparation</a>
+                    
+                        <small>(Categories: <a href="/category/open_source">open_source</a>, <a href="/category/collaboration">collaboration</a>, <a href="/category/programming">programming</a>)</small>
+                    
+                </li>
+                
+                
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+
+    </ul>
+    </div>
+
+
+<div class="PageNavigation">
+  
+    <a class="prev pull-left" href="https://www.didiksetiawan.com/blog/2017/04/05/google-summer-of-code-preparation/">&laquo; Google Summer of Code Preparation</a>
+  
+  
+    <a class="next pull-right" href="https://www.didiksetiawan.com/blog/2018/03/06/gsoc-with-gnu-wget2-part-i/">GSoC with GNU Wget2 - Part I &raquo;</a>
+  
+</div>
+
+
+<div class="disqus-comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* <![CDATA[ */
+
+        var disqus_shortname = "didiksetiawan";
+        var disqus_identifier = "https://www.didiksetiawan.com_Workflow on Contributing to Open Source Project";
+        var disqus_title = "Workflow on Contributing to Open Source Project";
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    /* ]]> */
+    </script>
+</div>
+</div>
+          <div class="row">
+            <div class="col-md-12 col-xs-12 footer">
+              <footer>
+	© 2009-2018 Didik Setiawan - Powered by Jekyll.
+</footer>
+
+            </div>
+          </div>
+        </div> <!-- end /.col-md-9 -->
+      </div> <!-- end /.row -->
+    </div>
+
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<script src="/static/js/super-search.js"></script>
+
+<script src="/static/js/thickbox-compressed.js"></script>
+<script src="/static/js/material.min.js"></script>
+<script src="/static/js/main.js"></script>
+<script src="/static/js/projects.js"></script>
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78151571-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </body>
+</html>
